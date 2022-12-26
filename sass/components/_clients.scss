@@ -1,34 +1,34 @@
-// * Постійні кліенти *
-.clients__set {
-  display: flex;
-  gap: 30px;
-}
+// // * Постійні кліенти *
+// .clients__set {
+//   display: flex;
+//   gap: 30px;
+// }
 
-.clients__item {
-  width: 170px;
-  height: 92px;
-}
+// .clients__item {
+//   width: 170px;
+//   height: 92px;
+// }
 
-.clients__link {
-  @include centeringFlex();
-  width: 100%;
-  height: 100%;
-}
+// .clients__link {
+//   @include centeringFlex();
+//   width: 100%;
+//   height: 100%;
+// }
 
-.clients__icon {
-  width: 170px;
-  height: 92px;
-  fill: var(--color-icon);
-  padding: 0 32px;
-  border: 1px solid var(--color-icon);
-  border-radius: 4px;
+// .clients__icon {
+//   width: 170px;
+//   height: 92px;
+//   fill: var(--color-icon);
+//   padding: 0 32px;
+//   border: 1px solid var(--color-icon);
+//   border-radius: 4px;
 
-  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+//   transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
 
-  &:hover {
-  fill: var(--color-accent);
-  border-color: var(--color-accent);
-}
-}
+//   &:hover {
+//   fill: var(--color-accent);
+//   border-color: var(--color-accent);
+// }
+// }
 
 

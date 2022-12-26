@@ -1,32 +1,32 @@
-// contact
-.contact {
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
-// іконки мейл. тел.
-&__icon {
-  align-self: center;
-}
-}
+// // contact
+// .contact {
+//   display: flex;
+//   margin-left: auto;
+//   gap: 50px;
+// // іконки мейл. тел.
+// &__icon {
+//   align-self: center;
+// }
+// }
 
-// Мейл. тел.
-.contact__link {
-  display: flex;
-  padding: 32px 0;
-  gap: 10px;
-  color: var(--color-primary);
-  font-weight: var(--font-weight-less);
-  font-size: var(--font-size-less);
-  fill: currentColor;
-  line-height: 1.143;
+// // Мейл. тел.
+// .contact__link {
+//   display: flex;
+//   padding: 32px 0;
+//   gap: 10px;
+//   color: var(--color-primary);
+//   font-weight: var(--font-weight-less);
+//   font-size: var(--font-size-less);
+//   fill: currentColor;
+//   line-height: 1.143;
 
-  transition: color 250ms var(--timing-function);
+//   transition: color 250ms var(--timing-function);
 
-&:hover,
-&:focus {
-  color: var(--color-accent);
-}
-}
+// &:hover,
+// &:focus {
+//   color: var(--color-accent);
+// }
+// }
 
 
 
