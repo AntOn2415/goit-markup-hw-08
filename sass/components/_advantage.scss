@@ -1,0 +1,25 @@
+// переваги студії
+
+.advantage__set {
+  display: flex;
+  max-width: 1170px;
+  height: 248px;
+  gap: 30px;
+}
+
+.advantage__item {
+  width: 270px;
+}
+
+.thumb {
+  @include centeringFlex();
+  height: 120px;
+  background-color: var(--color-background-light);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.tean__member {
+  margin-bottom: 30px;
+
+}

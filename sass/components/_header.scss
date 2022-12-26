@@ -1,0 +1,11 @@
+// heder
+.top-line {
+  background-color: var(--top-line-bg);
+  border-bottom: 1px solid var(--color-header-border);
+}
+
+// контейнер для хедера
+.header-line {
+  display: flex;
+}
+
