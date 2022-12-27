@@ -1,32 +1,36 @@
-// /* чим ми займаемося */
-// .section-work {
-//   padding-top: 0;
+/* чим ми займаемося */
+.section-work {
+  padding-top: 0;
 
-//   &__set {
-//     display: flex;
-//     gap: 30px;
-//   }
-//   &__foto {
-//     position: relative;
-//   }
+  &__set {
+    display: flex;
+    gap: 30px;
+  }
+  &__foto {
+    position: relative;
+  }
 
-//   &__overley {
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-//     width: 100%;
-//     height: 70px;
+  &__overley {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
 
-//     background: rgba(47, 48, 58, 0.8);
-//   }
+    background: rgba(47, 48, 58, 0.8);
+  }
 
-//   &__subtitle {
-//     padding: 27px 0;
-//     color: var(--color-white);
-//     font-size: var(--font-size-less);
-//     line-height: 1.143;
-//     letter-spacing: 0.03em;
-//     text-align: center;
-//     text-transform: uppercase;
-//   }
-// }
+  &__subtitle {
+    padding: 27px 0;
+    color: var(--color-white);
+    font-size: var(--font-size-less);
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}

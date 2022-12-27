@@ -1,34 +1,50 @@
-// // * Постійні кліенти *
-// .clients__set {
-//   display: flex;
-//   gap: 30px;
-// }
+// * Постійні кліенти *
 
-// .clients__item {
-//   width: 170px;
-//   height: 92px;
-// }
+.clients__set {
+@include centeringFlex();
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
-// .clients__link {
-//   @include centeringFlex();
-//   width: 100%;
-//   height: 100%;
-// }
+.clients__item {
+  max-width: 210px;
+  height: 92px;
 
-// .clients__icon {
-//   width: 170px;
-//   height: 92px;
-//   fill: var(--color-icon);
-//   padding: 0 32px;
-//   border: 1px solid var(--color-icon);
-//   border-radius: 4px;
+  @media screen and (min-width: $tablet) {
+  width: 226px;
+  }
 
-//   transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+@media screen and (min-width: $desktop) {
+  width: 170px;
+  }
 
-//   &:hover {
-//   fill: var(--color-accent);
-//   border-color: var(--color-accent);
-// }
-// }
+}
+
+.clients__link {
+  @include centeringFlex();
+  width: 100%;
+  height: 100%;
+  padding: 0 32px;
+  border: 1px solid var(--color-icon);
+  border-radius: 4px;
+
+  transition: border-color 250ms var(--timing-function);
+
+  &:hover {
+  border-color: var(--color-accent);
+}
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--color-icon);
+
+  transition: fill 250ms var(--timing-function);
+  .clients__link:hover & {
+  fill: var(--color-accent);
+}
+
+}
 
 

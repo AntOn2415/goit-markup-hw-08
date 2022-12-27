@@ -43,9 +43,14 @@
 
 /* кнопки фільтр порфолио */
 .btn-set {
-  @include centeringFlex();
+  @include centeringFlex($vertical: flex-start);
+  flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 8px;
+
+  @media screen and (min-width: $tablet) {
+    @include centeringFlex();
+  }
 }
 
 .btn-set__btn-filter {
