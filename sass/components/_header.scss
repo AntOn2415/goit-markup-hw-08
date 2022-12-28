@@ -7,5 +7,14 @@
 // контейнер для хедера
 .header-line {
   display: flex;
+  
 }
 
+.menu-btn {
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  @include centeringFlex(inline-flex);
+  cursor: pointer;
+}

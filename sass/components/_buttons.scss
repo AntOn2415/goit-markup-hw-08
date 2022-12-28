@@ -4,7 +4,7 @@
   margin-top: 0;
   margin-bottom: 0;
   padding: 13px 0;
-  @include centeringFlex(inline-block);
+  @include centeringFlex(inline-flex);
   cursor: pointer;
   border-radius: 4px;
   font-family: inherit;
