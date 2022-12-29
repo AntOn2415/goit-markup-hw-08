@@ -6,6 +6,11 @@
   &__list {
     display: flex;
     gap: 50px;
+    
+    @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    gap: 32px;
+  }
   }
 
   &__item {
@@ -32,9 +37,7 @@
   }
 
   @media screen and (max-width: $tablet) {
-    background-color: aqua;
-    font-size: 40px;
-line-height: 1.175;
+    display: none;
   }
 }
 
@@ -51,5 +54,9 @@ line-height: 1.175;
     height: 4px;
     border-radius: 2px;
     background-color: var(--color-accent);
+
+    @media screen and (max-width: $tablet) {
+    display: none;
+  }
   }
 }

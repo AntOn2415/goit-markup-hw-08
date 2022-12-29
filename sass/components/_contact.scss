@@ -38,8 +38,8 @@
   display: flex;
   color: var(--color-primary);
   font-weight: var(--font-weight-less);
-  font-size: 12px;
-  line-height: 1.167;
+  font-size: 34px;
+  line-height: 1.176;
   fill: currentColor;
 
   transition: color 250ms var(--timing-function);
@@ -47,6 +47,8 @@
   @media screen and (min-width: $tablet) {
     padding: 0;
     gap: 8px;
+    font-size: 12px;
+  line-height: 1.167;
   }
   @media screen and (min-width: $desktop) {
     padding: 32px 0;
