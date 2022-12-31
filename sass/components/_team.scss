@@ -19,7 +19,7 @@
       max-width: 450px;
 padding-bottom: 30px;
 
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: 767px) {
     margin-bottom: 30px;
     &:last-child {
       margin-bottom: 0;

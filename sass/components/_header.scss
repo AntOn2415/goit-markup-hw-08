@@ -4,7 +4,7 @@
 .header-line {
   position: relative;
   display: flex;
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: 767px) {
   height: 60px;
 }
 }
