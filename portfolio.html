@@ -27,6 +27,17 @@
           <a class="link logo-link" href="./index.html"
             ><span class="logo-link__accent">Web</span>Studio</a
           >
+
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-icon" width="24" height="16">
+              <use href="./images/icons.svg#menu_icon"></use>
+            </svg>
+          </button>
+
           <ul class="site-nav__list list">
             <li class="site-nav__item">
               <a class="link site-nav__link" href="./index.html">Студія</a>
@@ -96,13 +107,35 @@
                       приватну особу.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-8.jpeg"
-                    alt="відкрита веб-сторінка на ноутбуці"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-l@1x.jpg 1x,
+                        ./images/portfolio/img-l@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-m@1x.jpg 1x,
+                        ./images/portfolio/img-m@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-s@1x.jpg 1x,
+                        ./images/portfolio/img-s@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img-m@1x.jpg"
+                      alt="відкрита веб-сторінка на ноутбуці"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__text-content">
                   <h3 class="portfolio__subtitle">Технокряк</h3>
@@ -125,13 +158,35 @@
                       приватну особу.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-9.jpeg"
-                    alt="Два гравця баскетболу у грі"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-l@1x-1.jpg 1x,
+                        ./images/portfolio/img-l@2x-1.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-m@1x-1.jpg 1x,
+                        ./images/portfolio/img-m@2x-1.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-s@1x-1.jpg 1x,
+                        ./images/portfolio/img-s@2x-1.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img-s@1x-1.jpg"
+                      alt="Два гравця баскетболу у грі"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__text-content">
                   <h3 class="portfolio__subtitle">
@@ -156,13 +211,35 @@
                       приватну особу.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-10.jpeg"
-                    alt="логотип ресторану морська їжа з малюнком риби"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-l@1x-2.jpg 1x,
+                        ./images/portfolio/img-l@2x-2.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-m@1x-2.jpg 1x,
+                        ./images/portfolio/img-m@2x-2.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-s@1x-2.jpg 1x,
+                        ./images/portfolio/img-s@2x-2.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img-s@1x-2.jpg"
+                      alt="логотип ресторану морська їжа з малюнком риби"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__text-content">
                   <h3 class="portfolio__subtitle">Ресторан <span lang="en">Seafood</span></h3>
@@ -185,13 +262,35 @@
                       приватну особу.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-11.jpeg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-l@1x-3.jpg 1x,
+                        ./images/portfolio/img-l@2x-3.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-m@1x-3.jpg 1x,
+                        ./images/portfolio/img-m@2x-3.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-s@1x-3.jpg 1x,
+                        ./images/portfolio/img-s@2x-3.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img-s@1x-3.jpg"
+                      alt="Навушники"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__text-content">
                   <h3 class="portfolio__subtitle">Проєкт <span lang="en">Prime</span></h3>
@@ -214,13 +313,35 @@
                       приватну особу.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-12.jpeg"
-                    alt="дві коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-l@1x-4.jpg 1x,
+                        ./images/portfolio/img-l@2x-4.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-m@1x-4.jpg 1x,
+                        ./images/portfolio/img-m@2x-4.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-s@1x-4.jpg 1x,
+                        ./images/portfolio/img-s@2x-4.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img-s@1x-4.jpg"
+                      alt="дві коробки"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
 
                 <div class="portfolio__text-content">
@@ -244,13 +365,35 @@
                       приватну особу.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-13.jpeg"
-                    alt="сторінка веб-сайту на моніторі"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-l@1x-5.jpg 1x,
+                        ./images/portfolio/img-l@2x-5.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-m@1x-5.jpg 1x,
+                        ./images/portfolio/img-m@2x-5.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-s@1x-5.jpg 1x,
+                        ./images/portfolio/img-s@2x-5.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img-s@1x-5.jpg"
+                      alt="сторінка веб-сайту на моніторі"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
 
                 <div class="portfolio__text-content">
@@ -274,13 +417,35 @@
                       приватну особу.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-14.jpeg"
-                    alt="книга, лимітоване видавництво"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-l@1x-6.jpg 1x,
+                        ./images/portfolio/img-l@2x-6.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-m@1x-6.jpg 1x,
+                        ./images/portfolio/img-m@2x-6.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-s@1x-6.jpg 1x,
+                        ./images/portfolio/img-s@2x-6.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img-s@1x-6.jpg"
+                      alt="книга, лимітоване видавництво"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
 
                 <div class="portfolio__text-content">
@@ -306,13 +471,35 @@
                       приватну особу.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-15.jpeg"
-                    alt="Лейбл магазину"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-l@1x-7.jpg 1x,
+                        ./images/portfolio/img-l@2x-7.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-m@1x-7.jpg 1x,
+                        ./images/portfolio/img-m@2x-7.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-s@1x-7.jpg 1x,
+                        ./images/portfolio/img-s@2x-7.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img-s@1x-7.jpg"
+                      alt="Лейбл магазину"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
 
                 <div class="portfolio__text-content">
@@ -336,13 +523,35 @@
                       приватну особу.
                     </p>
                   </div>
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-16.jpeg"
-                    alt="Людина працюе за ноутбуком"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-l@1x-8.jpg 1x,
+                        ./images/portfolio/img-l@2x-8.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-m@1x-8.jpg 1x,
+                        ./images/portfolio/img-m@2x-8.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="
+                        ./images/portfolio/img-s@1x-8.jpg 1x,
+                        ./images/portfolio/img-s@2x-8.jpg 2x
+                      "
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img-s@1x-8.jpg"
+                      alt="Людина працюе за ноутбуком"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div class="portfolio__text-content">
                   <h3 class="portfolio__subtitle" lang="en">Growing Business</h3>
@@ -444,6 +653,66 @@
           </form>
         </div>
       </div>
+
+      <!-- мобільне меню -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg class="menu-icon" width="19" height="19">
+            <use href="./images/icons.svg#close_icon"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item">
+              <a class="link mobile-nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="link mobile-nav__link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="link mobile-nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contact-mobile list">
+          <li class="contact-mobile__item">
+            <a
+              class="link contact-mobile__link contact-mobile__link--color"
+              href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="contact-mobile__item">
+            <a class="link contact-mobile__link" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="mobile-social list">
+          <li class="mobile-social__item">
+            <a class="link mobile-social__link" href="#">Instagram</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="link mobile-social__link" href="#">Twitter</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="link mobile-social__link" href="#">Facebook</a>
+          </li>
+          <li class="mobile-social__item">
+            <a class="link mobile-social__link" href="#">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="js/mobile-menu.js"></script>
     </footer>
   </body>
 </html>

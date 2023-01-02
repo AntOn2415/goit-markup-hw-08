@@ -458,14 +458,26 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-img-portfolio__overlay)), to(var(--color-img-portfolio__overlay))), url(../images/mobile/studio/Img-team-mobile.png);
-  background-image: linear-gradient(to right, var(--color-img-portfolio__overlay), var(--color-img-portfolio__overlay)), url(../images/mobile/studio/Img-team-mobile.png);
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--color-img-portfolio__overlay)), to(var(--color-img-portfolio__overlay))), url(../images/hero/bg-s@1x.jpg);
+  background-image: linear-gradient(to right, var(--color-img-portfolio__overlay), var(--color-img-portfolio__overlay)), url(../images/hero/bg-s@1x.jpg);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--color-img-portfolio__overlay)), to(var(--color-img-portfolio__overlay))), url(../images/hero/bg-s@2x.jpg);
+    background-image: linear-gradient(to right, var(--color-img-portfolio__overlay), var(--color-img-portfolio__overlay)), url(../images/hero/bg-s@2x.jpg);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--color-img-portfolio__overlay)), to(var(--color-img-portfolio__overlay))), url(../images/tablet/studio/Img-team-tablet.png);
-    background-image: linear-gradient(to right, var(--color-img-portfolio__overlay), var(--color-img-portfolio__overlay)), url(../images/tablet/studio/Img-team-tablet.png);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--color-img-portfolio__overlay)), to(var(--color-img-portfolio__overlay))), url(../images/hero/bg-m@1x.jpg);
+    background-image: linear-gradient(to right, var(--color-img-portfolio__overlay), var(--color-img-portfolio__overlay)), url(../images/hero/bg-m@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--color-img-portfolio__overlay)), to(var(--color-img-portfolio__overlay))), url(../images/hero/bg-m@2x.jpg);
+    background-image: linear-gradient(to right, var(--color-img-portfolio__overlay), var(--color-img-portfolio__overlay)), url(../images/hero/bg-m@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -473,8 +485,14 @@ p {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--color-img-portfolio__overlay)), to(var(--color-img-portfolio__overlay))), url(../images/studio/Img-team.jpeg);
-    background-image: linear-gradient(to right, var(--color-img-portfolio__overlay), var(--color-img-portfolio__overlay)), url(../images/studio/Img-team.jpeg);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--color-img-portfolio__overlay)), to(var(--color-img-portfolio__overlay))), url(../images/hero/bg-l@1x.jpg);
+    background-image: linear-gradient(to right, var(--color-img-portfolio__overlay), var(--color-img-portfolio__overlay)), url(../images/hero/bg-l@1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--color-img-portfolio__overlay)), to(var(--color-img-portfolio__overlay))), url(../images/hero/bg-l@2x.jpg);
+    background-image: linear-gradient(to right, var(--color-img-portfolio__overlay), var(--color-img-portfolio__overlay)), url(../images/hero/bg-l@2x.jpg);
   }
 }
 .hero__title {

@@ -34,8 +34,8 @@
             aria-controls="mobile-menu"
           >
             <svg class="menu-icon" width="24" height="16">
-                  <use href="./images/icons.svg#menu_icon"></use>
-                </svg>
+              <use href="./images/icons.svg#menu_icon"></use>
+            </svg>
           </button>
 
           <ul class="site-nav__list list">
@@ -135,7 +135,11 @@
           <ul class="list section-work__set">
             <li class="section-work__foto">
               <img
-                src="./images/studio/img-1.jpeg"
+                srcset="
+                  ./images/section-work/img-l@1x.jpg 1x,
+                  ./images/section-work/img-l@2x.jpg 2x
+                "
+                src="./images/section-work/img-l@1x.jpg"
                 alt="Програмист пряцює за столом. Нtml код."
                 width="370"
                 height="294"
@@ -147,7 +151,11 @@
 
             <li class="section-work__foto">
               <img
-                src="./images/studio/img-2.jpeg"
+                srcset="
+                  ./images/section-work/img-l@1x-1.jpg 1x,
+                  ./images/section-work/img-l@2x-1.jpg 2x
+                "
+                src="./images/section-work/img-l@1x-1.jpg"
                 alt="Дизайнер розробляе мобільні додатки. Інтерфейс для смартфона."
                 width="370"
                 height="294"
@@ -158,7 +166,11 @@
             </li>
             <li class="section-work__foto">
               <img
-                src="./images/studio/img-3.jpeg"
+                srcset="
+                  ./images/section-work/img-l@1x-2.jpg 1x,
+                  ./images/section-work/img-l@2x-2.jpg 2x
+                "
+                src="./images/section-work/img-l@1x-2.jpg"
                 alt="Художник вебдизайнер вибирає кольор на графичному планшеті."
                 width="370"
                 height="294"
@@ -176,13 +188,27 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="list team__set">
             <li class="team__item">
-              <img
-                class="image team__member"
-                src="./images/studio/img-4.jpeg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-l@1x.jpg 1x, ./images/team/img-l@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-m@1x.jpg 1x, ./images/team/img-m@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-s@1x.jpg 1x, ./images/team/img-s@2x.jpg 2x"
+                />
+                <img
+                  class="image team__member"
+                  src="./images/team/img-m@1x.jpg"
+                  alt="Ігор Дем'яненко"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="section__subtitle">Ігор Дем'яненко</h3>
               <p class="team__text" lang="en">Product Designer</p>
               <ul class="list social-links">
@@ -203,8 +229,8 @@
                 <li class="item social-links__item">
                   <a class="link social-links__link" href="#" aria-label="facebook">
                     <svg class="social-links__icon">
-                      <use href="./images/icons.svg#facebook"></use>
-                    </svg>
+                      <use href="./images/icons.svg#facebook"></use></svg
+                    >
                   </a>
                 </li>
                 <li class="item social-links__item">
@@ -217,13 +243,27 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="image team__member"
-                src="./images/studio/img-5.jpeg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-l@1x-1.jpg 1x, ./images/team/img-l@2x-1.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-m@1x-1.jpg 1x, ./images/team/img-m@2x-1.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-s@1x-1.jpg 1x, ./images/team/img-s@2x-1.jpg 2x"
+                />
+                <img
+                  class="image team__member"
+                  src="./images/team/img-m@1x-1.jpg"
+                  alt="Ольга Рєпіна"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="section__subtitle">Ольга Рєпіна</h3>
               <p class="team__text" lang="en">Frontend Developer</p>
               <ul class="list social-links">
@@ -238,8 +278,8 @@
                   <a class="link social-links__link" href="#" aria-label="twitter">
                     <svg class="social-links__icon">
                       <use href="./images/icons.svg#twitter"></use>
-                    </svg>
-                  </a>
+                    </svg> </a
+                  >
                 </li>
                 <li class="item social-links__item">
                   <a class="link social-links__link" href="#" aria-label="facebook">
@@ -258,13 +298,27 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="image team__member"
-                src="./images/studio/img-6.jpeg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-l@1x-2.jpg 1x, ./images/team/img-l@2x-2.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-m@1x-2.jpg 1x, ./images/team/img-m@2x-2.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-s@1x-2.jpg 1x, ./images/team/img-s@2x-2.jpg 2x"
+                />
+                <img
+                  class="image team__member"
+                  src="./images/team/img-m@1x-2.jpg"
+                  alt="Микола Тарасо2"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="section__subtitle">Микола Тарасов</h3>
               <p class="team__text" lang="en">Marketing</p>
               <ul class="list social-links">
@@ -299,13 +353,27 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                class="image team__member"
-                src="./images/studio/img-7.jpeg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/team/img-l@1x-3.jpg 1x, ./images/team/img-l@2x-3.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img-m@1x-3.jpg 1x, ./images/team/img-m@2x-3.jpg 2x"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/team/img-s@1x-3.jpg 1x, ./images/team/img-s@2x-3.jpg 2x"
+                />
+                <img
+                  class="image team__member"
+                  src="./images/team/img-m@1x-3.jpg"
+                  alt="Михайло Єрмаков"
+                  loading="lazy"
+                />
+              </picture>
+
               <h3 class="section__subtitle">Михайло Єрмаков</h3>
               <p class="team__text" lang="en">UI Designer</p>
               <ul class="list social-links">
@@ -396,8 +464,7 @@
 
     <footer class="page-footer">
       <div class="container footer-conteiner">
-
-<div class="footer-link">
+        <div class="footer-link">
           <a class="link logo-link logo-link--light" href="./index.html"
             ><span class="logo-link__accent">Web</span>Studio</a
           >
@@ -424,7 +491,7 @@
           </address>
         </div>
 
-<div class="social-bloc">
+        <div class="social-bloc">
           <p class="welcome-text"><strong>приєднуйтесь</strong></p>
           <ul class="list social-links">
             <li class="social-links__item">
@@ -473,7 +540,7 @@
             </li>
           </ul>
         </div>
-        
+
         <div class="subscribe">
           <p class="welcome-text"><strong>Підпишіться на розсилку</strong></p>
           <form class="form-footer js-speaker-form">
@@ -555,8 +622,8 @@
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg class="menu-icon" width="19" height="19">
-                      <use href="./images/icons.svg#close_icon"></use>
-                    </svg>
+          <use href="./images/icons.svg#close_icon"></use>
+        </svg>
       </button>
 
       <nav class="mobile-nav">
