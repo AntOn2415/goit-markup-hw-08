@@ -1,31 +1,11 @@
+// шрифти
+@import "./fonts/fonts";
+
 // змінні
-@import "./utils/variables";
-@import "./utils/placeholders";
-@import "./utils/mixin";
-@import "./utils/breakpoints";
+@import "./utils/index";
 
-// спадкодавець
-@import "./base/global";
-
-// скидання властивостей
-@import "./base/reset";
+// база
+@import "./base/index.scss";
 
 // компоненти
-@import "./components/container";
-@import "./components/header";
-@import "./components/share/logo";
-@import "./components/site-nav";
-@import "./components/contact";
-@import "./components/buttons";
-@import "./components/hero";
-@import "./components/section";
-@import "./components/advantage";
-@import "./components/section-work";
-@import "./components/team";
-@import "./components/share/social-links";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/portfolio";
-@import "./components/modal-window";
-@import "./components/mobile-menu";
-
+@import "./components/index"

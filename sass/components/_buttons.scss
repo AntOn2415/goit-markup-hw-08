@@ -1,5 +1,5 @@
 /* кнопка загальні властивості */
-%button {
+.button {
   border: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -23,7 +23,7 @@
 }
 
 .hero__btn {
-  @extend %button;
+  @extend .button;
   padding: 10px 32px;
   min-width: 216px;
   line-height: 1.9;
@@ -34,7 +34,7 @@
 
 // Кнопка  підписатися у футорі
 .btn-submit {
-  @extend %button;
+  @extend .button;
   @include centeringFlex();
   min-width: 200px;
   fill: currentColor;
@@ -42,7 +42,6 @@
 
   margin-left: auto;
   margin-right: auto;
-
 }
 
 /* кнопки фільтр порфолио */
@@ -58,7 +57,7 @@
 }
 
 .btn-set__btn-filter {
-  @extend %button;
+  @extend .button;
   padding: 6px 22px;
   color: var(--color-secondary);
   background: var(--color-background-light);
@@ -83,7 +82,7 @@
 
 /* кнопка відправки форми */
 .form__submit {
-  @extend %button;
+  @extend .button;
   @include centeringFlex();
   min-width: 200px;
   padding: 10px 0;

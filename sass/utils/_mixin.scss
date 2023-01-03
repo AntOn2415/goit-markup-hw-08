@@ -1,3 +1,4 @@
+// для центрування флексами  @include centeringFlex()
 @mixin centeringFlex($type: flex, $level: center, $vertical: center) {
   display: $type;
   align-items: $level;

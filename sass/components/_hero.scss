@@ -2,7 +2,7 @@
 .hero {
   text-align: center;
   margin: 0 auto;
-  max-width: $mobile;
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: var(--color-brand);
@@ -18,65 +18,57 @@
     ),
     url(../images/hero/bg-s@1x.jpg);
 
-    // для ритина дисплеїв
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+  // для ритина дисплеїв
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(
-      to right,
-      var(--color-img-portfolio__overlay),
-      var(--color-img-portfolio__overlay)
-    ),
-    url(../images/hero/bg-s@2x.jpg);
+        to right,
+        var(--color-img-portfolio__overlay),
+        var(--color-img-portfolio__overlay)
+      ),
+      url(../images/hero/bg-s@2x.jpg);
   }
-    
 
-  @media screen and (min-width: $tablet) {
-    max-width: $tablet;
+  @media screen and (min-width: 730px) {
     // зображення для планшету
     background-image: linear-gradient(
-      to right,
-      var(--color-img-portfolio__overlay),
-      var(--color-img-portfolio__overlay)
-    ),
-    url(../images/hero/bg-m@1x.jpg);
+        to right,
+        var(--color-img-portfolio__overlay),
+        var(--color-img-portfolio__overlay)
+      ),
+      url(../images/hero/bg-m@1x.jpg);
 
     // для ритина дисплеїв
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-      to right,
-      var(--color-img-portfolio__overlay),
-      var(--color-img-portfolio__overlay)
-    ),
-    url(../images/hero/bg-m@2x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--color-img-portfolio__overlay),
+          var(--color-img-portfolio__overlay)
+        ),
+        url(../images/hero/bg-m@2x.jpg);
+    }
   }
-  }
-
   @media screen and (min-width: $desktop) {
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+  @media screen and (min-width: 960px) {
     // зображення для дестопу
     background-image: linear-gradient(
-      to right,
-      var(--color-img-portfolio__overlay),
-      var(--color-img-portfolio__overlay)
-    ),
-    url(../images/hero/bg-l@1x.jpg);
+        to right,
+        var(--color-img-portfolio__overlay),
+        var(--color-img-portfolio__overlay)
+      ),
+      url(../images/hero/bg-l@1x.jpg);
 
     // для ритина дисплеїв
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-      to right,
-      var(--color-img-portfolio__overlay),
-      var(--color-img-portfolio__overlay)
-    ),
-    url(../images/hero/bg-l@2x.jpg);
-  }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--color-img-portfolio__overlay),
+          var(--color-img-portfolio__overlay)
+        ),
+        url(../images/hero/bg-l@2x.jpg);
+    }
   }
 
   &__title {
@@ -95,7 +87,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-    width: $desktop;
+      width: $desktop;
       max-width: 696px;
       font-size: 44px;
       line-height: 1.364;
