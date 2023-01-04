@@ -2,36 +2,36 @@
 .contact {
   display: none;
   margin-left: auto;
-  
+
   @media screen and (min-width: $tablet) {
     @include centeringFlex($level: flex-start);
     flex-direction: column;
     gap: 10px;
   }
-   @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $desktop) {
     @include centeringFlex($level: flex-start);
     flex-direction: row;
     gap: 50px;
   }
 
-// іконки мейл. тел.
-&__icon {
-  align-self: center;
-}
+  // іконки мейл. тел.
+  &__icon {
+    align-self: center;
+  }
 }
 
 // розмір іконок контактів для планшету
 @media screen and (max-width: 1199px) {
-.contact__icon--envelope-small {
-  width: 14px;
-  height: 10px;
-}
-
-.contact__icon--phone-small {
-  width: 10px;
-  height: 14px;
-}
+  .contact__icon--envelope-small {
+    width: 14px;
+    height: 10px;
   }
+
+  .contact__icon--phone-small {
+    width: 10px;
+    height: 14px;
+  }
+}
 
 // Мейл. тел.
 .contact__link {
@@ -48,7 +48,7 @@
     padding: 0;
     gap: 8px;
     font-size: 12px;
-  line-height: 1.167;
+    line-height: 1.167;
   }
   @media screen and (min-width: $desktop) {
     padding: 32px 0;
@@ -57,11 +57,8 @@
     line-height: 1.143;
   }
 
-&:hover,
-&:focus {
-  color: var(--color-accent);
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
 }
-}
-
-
-
