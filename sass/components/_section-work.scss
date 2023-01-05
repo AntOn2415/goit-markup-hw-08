@@ -8,6 +8,7 @@
   }
   &__foto {
     position: relative;
+    @include flex-basis(3, 30px);
   }
 
   &__overley {

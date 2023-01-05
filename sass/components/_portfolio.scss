@@ -74,12 +74,11 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: auto;
-    flex-basis: calc((100% - 30px) / 2);
+    @include flex-basis(2, 30px);
   }
 
   @media screen and (min-width: $desktop) {
-    flex-basis: calc((100% - 60px) / 3);
+    @include flex-basis(3, 30px);
   }
 
   &:hover,

@@ -6,18 +6,9 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    max-width: 1170px;
-    height: 248px;
-    gap: 30px;
-  }
 }
 
 .advantage__item {
-  max-width: 450px;
-
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
     &:last-child {
@@ -26,11 +17,11 @@
   }
 
   @media screen and (min-width: $tablet) {
-    max-width: 354px;
+    @include flex-basis(2, 30px);
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: 270px;
+    @include flex-basis(4, 30px);
   }
 }
 
@@ -41,9 +32,11 @@
 }
 
 .thumb {
-  background-color: var(--color-background-light);
-  border-radius: 4px;
-  margin-bottom: 30px;
   @include centeringFlex();
   height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--color-background-light);
+  border-radius: 4px;
+  
 }
