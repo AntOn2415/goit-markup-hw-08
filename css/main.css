@@ -728,6 +728,11 @@ p {
   margin-bottom: 50px;
   gap: 8px;
 }
+@media screen and (max-width: 767px) {
+  .btn-set {
+    max-width: 430px;
+  }
+}
 @media screen and (min-width: 768px) {
   .btn-set {
     display: -webkit-box;
@@ -1033,7 +1038,7 @@ p {
   }
 }
 .team__bottom-card {
-  padding: 30px 15px 24px;
+  padding: 30px 15px;
 }
 .team__member {
   width: 100%;
@@ -1160,6 +1165,13 @@ p {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer-link {
+    max-width: 207px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-link {
     -ms-flex-preferred-size: calc(50% - 52px);

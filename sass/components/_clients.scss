@@ -1,10 +1,9 @@
 // * Постійні кліенти *
 
 .clients__set {
-@include centeringFlex();
-    flex-wrap: wrap;
-    gap: 30px;
-
+  @include centeringFlex();
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__item {
@@ -12,13 +11,12 @@
   @include flex-basis(2, 30px);
 
   @media screen and (min-width: $tablet) {
-  @include flex-basis(3, 30px);
+    @include flex-basis(3, 30px);
   }
 
-@media screen and (min-width: $desktop) {
-  @include flex-basis(6, 30px);
+  @media screen and (min-width: $desktop) {
+    @include flex-basis(6, 30px);
   }
-
 }
 
 .clients__link {
@@ -31,8 +29,8 @@
   transition: border-color 250ms var(--timing-function);
 
   &:hover {
-  border-color: var(--color-accent);
-}
+    border-color: var(--color-accent);
+  }
 }
 
 .clients__icon {
@@ -42,9 +40,6 @@
 
   transition: fill 250ms var(--timing-function);
   .clients__link:hover & {
-  fill: var(--color-accent);
+    fill: var(--color-accent);
+  }
 }
-
-}
-
-

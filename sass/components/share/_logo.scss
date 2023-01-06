@@ -1,4 +1,3 @@
-
 // logo
 .logo-link__accent {
   color: var(--color-accent);
@@ -7,15 +6,15 @@
 .logo-link {
   margin-right: 93px;
   color: var(--color-logo);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.167;
   text-decoration: none;
 
   @media screen and (min-width: $desktop) {
-  font-size: 26px;
-  line-height: 1.2;
+    font-size: 26px;
+    line-height: 1.2;
   }
 }
 

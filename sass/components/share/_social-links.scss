@@ -18,7 +18,8 @@
   color: var(--color-icon);
   fill: currentColor;
 
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
 
   &:hover,
   &:focus {
