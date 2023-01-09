@@ -1,11 +1,11 @@
 // logo
 .logo-link__accent {
-  color: var(--color-accent);
+  color: $color-accent;
 }
 
 .logo-link {
   margin-right: 93px;
-  color: var(--color-logo);
+  color: $color-logo;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -21,5 +21,5 @@
 // логотип у футері
 .logo-link--light {
   margin: 0;
-  color: var(--color-logo-link--light);
+  color: $color-logo-link--light;
 }

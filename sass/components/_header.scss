@@ -10,6 +10,6 @@
 }
 // лінія унизу хедера
 .top-line {
-  background-color: var(--top-line-bg);
-  border-bottom: 1px solid var(--color-header-border);
+  background-color: $top-line-bg;
+  border-bottom: 1px solid $color-header-border;
 }

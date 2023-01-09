@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--color-brand);
+  background-color: $color-brand;
 }
 
 .footer-conteiner {
@@ -27,12 +27,11 @@
 }
 
 .footer-link {
-  
   // max-width: 207px;
-@media screen and (max-width: 767px) {
-  max-width: 208px;
-margin-left: auto;
-margin-right: auto;
+  @media screen and (max-width: 767px) {
+    max-width: 208px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: $tablet) {
     flex-basis: calc(50% - 52px);
@@ -62,34 +61,34 @@ margin-right: auto;
 }
 
 .address__reach {
-  color: var(--color-white);
+  color: $color-white;
   font-style: normal;
   font-weight: inherit;
-  font-size: var(--font-size-less);
+  font-size: $font-size-less;
   line-height: 1.143;
   letter-spacing: 0.03em;
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms $timing-function;
 
   &:hover,
   &:focus {
-    color: var(--color-accent);
+    color: $color-accent;
   }
 }
 
 .address__contact {
-  color: var(--color-contact-footer);
+  color: $color-contact-footer;
   font-style: normal;
   font-weight: inherit;
-  font-size: var(--font-size-less);
+  font-size: $font-size-less;
   line-height: 1.143;
   letter-spacing: 0.03em;
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms $timing-function;
 
   &:hover,
   &:focus {
-    color: var(--color-accent);
+    color: $color-accent;
   }
 }
 
@@ -97,10 +96,10 @@ margin-right: auto;
 
 .welcome-text {
   text-transform: uppercase;
-  font-size: var(--font-size-less);
+  font-size: $font-size-less;
   line-height: 1.143;
   letter-spacing: 0.03em;
-  color: var(--color-white);
+  color: $color-white;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -133,14 +132,14 @@ margin-right: auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  font-size: var(--font-size-more);
+  font-size: $font-size-more;
   line-height: 1.25;
   letter-spacing: 0.03em;
   outline: none;
-  color: var(--color-white);
+  color: $color-white;
 
   &::placeholder {
-    color: var(--color-contact-footer);
+    color: $color-contact-footer;
   }
 
   @media screen and (min-width: $tablet) {

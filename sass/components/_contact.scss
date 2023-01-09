@@ -36,13 +36,13 @@
 // Мейл. тел.
 .contact__link {
   display: flex;
-  color: var(--color-primary);
-  font-weight: var(--font-weight-less);
+  color: $color-primary;
+  font-weight: $font-weight-less;
   font-size: 34px;
   line-height: 1.176;
   fill: currentColor;
 
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms $timing-function;
 
   @media screen and (min-width: $tablet) {
     padding: 0;
@@ -53,12 +53,12 @@
   @media screen and (min-width: $desktop) {
     padding: 32px 0;
     gap: 10px;
-    font-size: var(--font-size-less);
+    font-size: $font-size-less;
     line-height: 1.143;
   }
 
   &:hover,
   &:focus {
-    color: var(--color-accent);
+    color: $color-accent;
   }
 }
